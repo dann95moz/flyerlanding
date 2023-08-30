@@ -6,15 +6,15 @@ export interface City {
 export const SampleData: City[] = [{
     cityName: 'Chicago',
     minValue: 600.00,
-    url: '../../../../assets/chicago.png'
+    url: '../../../../assets/chicago-min.png'
 },
     {
         cityName: 'Porto',
         minValue: 600.00,
-        url:'../../../../assets/porto.png'
+        url:'../../../../assets/porto-min.png'
     },
     {
         cityName: 'Chicago',
         minValue: 600.00,
-        url: '../../../../assets/mire.png'
+        url: '../../../../assets/mire-min.png'
 }]

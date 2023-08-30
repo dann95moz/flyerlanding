@@ -12,7 +12,7 @@
     <button class="btn open-icon" (click)="toggleMenu()">
       <img
         src="../../../assets/close_FILL0_wght400_GRAD0_opsz48 2.svg"
-        alt="Airline to the people"
+        alt="Airline to the people logo"
       />
     </button>
   </ng-template>
@@ -27,7 +27,15 @@
     <section class="links">
       <a href="">Check-in</a>
       <a href="">Manage my booking</a>
-      <a href="">Information</a>
+      <div href="" class="menu" (click)="toggleInformationMenu()">
+        Information
+        <ul *ngIf="showInformationMenu">
+          <li><a href="">Help center</a></li>
+          <li><a href="">Flight State</a></li>
+          <li><a href=""></a>Airplanes</li>
+          <li><a href=""></a>Routes</li>
+        </ul>
+      </div>
     </section>
   </aside>
   <aside class="aside">

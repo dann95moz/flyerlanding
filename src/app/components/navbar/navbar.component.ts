@@ -10,16 +10,22 @@ import { ToggleService } from 'src/app/services/toggle.service';
 export class NavbarComponent implements OnInit {
   constructor(public toggleState: ToggleService ){}
   isMenuOpen = false
+  showInformationMenu= false
   ngOnInit(): void {
     this.toggleState.getToggleState().subscribe({
       next: (state: boolean) => {
         this.isMenuOpen = state;
     }
   })
-    
+  
   }
   toggleMenu() {
     this.toggleState.setToggleState(!this.isMenuOpen)
    
+  }
+  toggleInformationMenu() {
+    console.log(this.showInformationMenu);
+    
+    this.showInformationMenu= !this.showInformationMenu
   }
 }
