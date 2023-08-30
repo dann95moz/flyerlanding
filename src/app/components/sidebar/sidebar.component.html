@@ -1,0 +1,25 @@
+<div *ngIf="showMenu" class="sidebar">
+  <div *ngIf="!showInformationOptions; else informationContent">
+    <p>Check-in</p>
+    <hr />
+    <p>Manage my booking</p>
+    <hr />
+    <p (click)="showInformation()">Information</p>
+  </div>
+
+  <ng-template #informationContent>
+    <h3><strong>Information</strong></h3>
+    <p class="sub-item">
+      <a href="">Help center</a>
+    </p>
+    <p class="sub-item">
+      <a href="">Flight state</a>
+    </p>
+    <p class="sub-item">
+      <a href="">Airplanes</a>
+    </p>
+    <p class="sub-item">
+      <a href="">Routes</a>
+    </p>
+  </ng-template>
+</div>

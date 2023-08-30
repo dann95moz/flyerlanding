@@ -1,0 +1,40 @@
+<nav class="navbar margin">
+  <ng-container *ngIf="!isMenuOpen; else openedMenu">
+    <button class="btn close-icon" (click)="toggleMenu()">
+      <img
+        src="../../../assets/menu_FILL0_wght400_GRAD0_opsz48 1.svg"
+        alt="icono de cierre"
+      />
+    </button>
+  </ng-container>
+
+  <ng-template #openedMenu>
+    <button class="btn open-icon" (click)="toggleMenu()">
+      <img
+        src="../../../assets/close_FILL0_wght400_GRAD0_opsz48 2.svg"
+        alt="Airline to the people"
+      />
+    </button>
+  </ng-template>
+
+  <aside class="aside">
+    <img
+      src="../../../assets/logo 1.svg"
+      alt="Airline to the people"
+      class="logo"
+    />
+
+    <section class="links">
+      <a href="">Check-in</a>
+      <a href="">Manage my booking</a>
+      <a href="">Information</a>
+    </section>
+  </aside>
+  <aside class="aside">
+    <img
+      src="../../../assets/language_FILL0_wght400_GRAD0_opsz48 1.svg"
+      alt="language-icon"
+    />
+    <p class="language-selected">Language</p>
+  </aside>
+</nav>

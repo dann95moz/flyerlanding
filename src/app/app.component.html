@@ -1,0 +1,25 @@
+<main>
+  <div>
+    <navbar-component></navbar-component>
+    <app-sidebar></app-sidebar>
+    <div *ngIf="!isMenuOpen" class="take-a-rest padding">
+      <h1>take a rest</h1>
+      <p>
+        Discover all the offers available at the best prices for the whole
+        country and the world
+      </p>
+      <button class="main-action"><h3>Buy</h3></button>
+    </div>
+    <section>
+      <div class="margin">
+        <h2 class="offers"><strong>Offers</strong></h2>
+        <section>
+          <app-place-card [sampleData]="sampleData" class="cards-container">
+          </app-place-card>
+          <destination-card class="destination-card"></destination-card>
+        </section>
+      </div>
+    </section>
+  </div>
+  <footer-component></footer-component>
+</main>
